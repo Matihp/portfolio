@@ -3,8 +3,27 @@ import "./Contact.scss";
 import { contacts } from '../../../Data';
 import { socialIcons } from '../../../Data';
 import { motion } from 'framer-motion';
+import { useForm, ValidationError } from '@formspree/react';
+import Swal from 'sweetalert2';
 
 const Contact = () => {
+
+  const [state, handleSubmit] = useForm("mknagnka");
+  
+  if (state.submitting) {
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Se envio correctamente.',
+      showConfirmButton: false,
+      timer: 2000,
+      width: 400,
+      padding: '3em',
+      color: 'white',
+      background: '#1f1d1d'
+    })
+  }
+
   return (
     <div className="container" id="contacto">
       <motion.div
@@ -50,24 +69,28 @@ const Contact = () => {
         
         >
           <h3>Get In Touch</h3>
-          <div className="row">
-            <input type="text" placeholder='Nombre' />
-            <input type="text" placeholder='Apellido'/>
-          </div>
-          <div className="row">
-            <input type="text" placeholder='Celular' />
-            <input type="email" placeholder='Email' />
-          </div>
-          <div className="row">
-            <textarea placeholder='Mensaje'></textarea>
-          </div>
-          <motion.div
-            whileHover={{ scale: 1.1 }}
-            transition={{duration: 0.3}}
-            className="btn"
-          >
-            <a href="#">Enviar</a>
-          </motion.div>
+          <form onSubmit={handleSubmit}>
+            <div className="row">
+              <input type="text" placeholder='Nombre'name='name'minlength='4' required/>
+              <input type="text" placeholder='Apellido'name='last name'minlength='4' required/>
+            </div>
+            <div className="row">
+              <input type="text" placeholder='Celular' name="celular"required/>
+              <input type="email" placeholder='Email' name="email"minlength='4' required/>
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
+              />
+            </div>
+            <div className="row">
+              <textarea id="message" placeholder='Mensaje'name="message"minlength='6' required></textarea>
+            </div>
+            
+            <button type="submit" disabled={state.submitting} className='btn'>Enviar</button>
+
+          </form>
+          
         </motion.div>
       </div>
     </div>

@@ -1,10 +1,9 @@
 import React from 'react'
 import perfil from '../../../assets/perfil.jpg'
 import "./Home.scss"
-import { motion, MotionConfig } from 'framer-motion'
+import { motion,} from 'framer-motion'
 import { Typewriter } from 'react-simple-typewriter'
 import { useGlobalStates } from '../../utils/global.context'
-
 
 
 const Home = () => {
@@ -19,6 +18,7 @@ const Home = () => {
     }
   }
 const {state}=useGlobalStates()
+
   return (
     <motion.div className="container " id='home'
       initial={{ y: -15, opacity: 0 }}

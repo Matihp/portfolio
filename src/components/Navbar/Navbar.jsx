@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import "./Navbar.scss";
-import { animate, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { HiMenuAlt4, HiX } from "react-icons/hi";
-import { btns, navLinks } from '../../Data';
+import { navLinks } from '../../Data';
 import { socialIcons } from '../../Data';
 import {MdOutlineLightMode,MdLightMode} from 'react-icons/md'
 import { useGlobalStates } from '../utils/global.context';
@@ -16,10 +16,6 @@ const Navbar = () => {
 
     const dark=state.dark;
 
-    const styles={
-        backgroundColor:'red',
-    }
-    
     const menuVariants = {
         hidden: {
             scale: 0
