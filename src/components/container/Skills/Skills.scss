@@ -6,7 +6,6 @@
     
     button {
         color: #000;
-        background: #fff;
         padding: 0.65rem 1rem;
         border-radius: 10px;
         font-size: 0.85rem;
@@ -14,6 +13,7 @@
         cursor: pointer;
         border: none;
         margin-top: 1rem;
+        background-color:#c2a1a1;
         font-family: "Poppins";
             &.active {
                 background: #8c12f0;
@@ -41,7 +41,6 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        color: #afafaf;
     }
   }
 }
@@ -49,7 +48,6 @@
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-    color: #fff;
     .experience {
       display: flex;
       justify-content: space-between;

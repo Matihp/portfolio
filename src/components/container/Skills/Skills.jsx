@@ -3,8 +3,10 @@ import "./Skills.scss";
 import { icons } from '../../../Data';
 import { experiences } from '../../../Data';
 import { motion } from 'framer-motion';
+import { useGlobalStates } from '../../utils/global.context';
 const Skills = () => {
   const [active, setActive] = useState(1)
+  const {state}=useGlobalStates()
   return (
     <div className="container" id="habilidades">
       <motion.div
@@ -26,6 +28,7 @@ const Skills = () => {
         <button
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}
+          style={{backgroundColor:'#c2a1a1'}}
         >Experiences</button>
       </motion.div>
       <motion.div
@@ -35,7 +38,7 @@ const Skills = () => {
       >
         {active === 1 && icons.map((icon, index) => {
           return (
-            <div key={index} className="tools" >
+            <div key={index} className="tools"style={{color:state.dark ?'black':'#afafaf'}} >
               {icon}
             </div>
           )
@@ -45,6 +48,7 @@ const Skills = () => {
         initial={{opacity: 0}}
         whileInView={{y: [-50, 0], opacity: 1}}
         className="experiencs"
+        style={{color:state.dark ? 'black' : '#fff'}}
       >
         {active === 2 && experiences.map(experience => {
           return (
