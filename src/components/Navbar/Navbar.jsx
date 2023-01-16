@@ -86,6 +86,7 @@ const Navbar = () => {
               <motion.div className="closeMenu"
                           variants={menuVariants}
                           initial="hidden" animate= {toggle ?"visible": "hidden"}
+                          style={{background: dark ?'#fff' :'#000'}}
                       >
               </motion.div>
               
@@ -93,14 +94,18 @@ const Navbar = () => {
                   variants={navLinkVariants}
                   animate={toggle ? "visible" : "hidden"}
                   className="menuX"
+                  style={{color: dark ? 'black' :'#fff'}}
               >
                   <HiX onClick={() => setToggle(false)}/>
                   {navLinks.map((navlink,index) => {
                       return <li
-                          key={index}><a
+                          key={index}><a style={{color: dark ? 'black' :'#fff'}}
                          
                           href={`#${navlink}`} onClick={() => setToggle(false)}>{navlink}</a></li>
                   })}
+                  <div className='menuX_btn'onClick={()=>dispatch(!state.dark ? { type: 'dark' }: { type: 'light' })}>
+                       {dark ? <MdOutlineLightMode/> : <MdLightMode/>}
+                    </div> 
               </motion.div>
           </div>
     </motion.div>

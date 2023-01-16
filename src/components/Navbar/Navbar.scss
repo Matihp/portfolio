@@ -59,6 +59,8 @@
    &-btn{
     margin-left: 1rem;
     svg {
+        @media screen and (max-width: 800px) {
+            display: none;}
         cursor: pointer;
         color: rgb(208, 25, 25);
         transition: 0.3s;
@@ -95,7 +97,6 @@
    }
    
    .closeMenu {
-    background: #000;
     width: 4rem;
     height: 4rem;
     position: fixed;
@@ -104,7 +105,6 @@
     border-radius: 50%;
    }
    .menuX {
-    color: #fff;
     position: fixed;
     top: 2rem;
     left: 0;
@@ -114,7 +114,13 @@
     justify-content: center;
     flex-direction: column;
     height: 100vh;
-    
+    &_btn{
+        position: absolute;
+        margin-left: 11.5rem;
+        margin-top: 15rem;
+        top: auto;
+        left: auto;
+    }
     svg {
         cursor: pointer;
         width: 1.5rem;
