@@ -8,7 +8,6 @@
     }
     button {
             color: #000;
-            background: #fff;
             padding: 0.65rem 1rem;
             border-radius: 10px;
             font-size: 0.85rem;
@@ -16,8 +15,8 @@
             cursor: pointer;
             border: none;
             margin-top: 1rem;
-            font-family: "Poppins";
-            
+            font-family:cursive;
+            background-color:#c2a1a1;
     
             &.active {
                 background: #8c12f0;

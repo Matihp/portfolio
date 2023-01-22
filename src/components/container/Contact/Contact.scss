@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 .contact_form {
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -9,6 +10,7 @@
     margin-right: auto;
     gap: 2rem;
     overflow: hidden;
+    font-family:cursive;
 
     @media screen and (max-width: 700px) {
         grid-template-columns: 1fr;
@@ -83,7 +85,7 @@
                 background: #b9b3b3;
                 border-radius: 5px;
                 font-size: 0.85rem;
-                font-family: "Poppins";
+                
             }
             textarea {
                 border: none;

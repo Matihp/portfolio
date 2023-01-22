@@ -12,7 +12,7 @@ import work6 from "./assets/work6.png";
 export const navLinks = ["home", "sobre mi", "habilidades", "portfolio", "contacto"]
 
 export const socialIcons = [
-  <FaGithub />,
+  <FaGithub /> ,
   <FaLinkedin />,
   <BsMedium />,
 ]
@@ -120,3 +120,4 @@ export const contacts = [
     infoText: "+54-3462-645267"
   }
 ]
+

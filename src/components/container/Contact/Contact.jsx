@@ -71,12 +71,12 @@ const Contact = () => {
           <h3>Get In Touch</h3>
           <form onSubmit={handleSubmit}>
             <div className="row">
-              <input type="text" placeholder='Nombre'name='name'minlength='4' required/>
-              <input type="text" placeholder='Apellido'name='last name'minlength='4' required/>
+              <input type="text" placeholder='Nombre'name='name'minLength='4' required/>
+              <input type="text" placeholder='Apellido'name='last name'minLength='4' required/>
             </div>
             <div className="row">
               <input type="text" placeholder='Celular' name="celular"required/>
-              <input type="email" placeholder='Email' name="email"minlength='4' required/>
+              <input type="email" placeholder='Email' name="email"minLength='4' required/>
               <ValidationError 
                 prefix="Email" 
                 field="email"
@@ -84,7 +84,7 @@ const Contact = () => {
               />
             </div>
             <div className="row">
-              <textarea id="message" placeholder='Mensaje'name="message"minlength='6' required></textarea>
+              <textarea id="message" placeholder='Mensaje'name="message"minLength='6' required></textarea>
             </div>
             
             <button type="submit" disabled={state.submitting} className='btn'>Enviar</button>

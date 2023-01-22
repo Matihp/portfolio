@@ -65,11 +65,11 @@ const Navbar = () => {
                   <li ><a style={{color:dark ?'rgb(0, 0, 0)': '#fff'}} href='#contacto'>contacto</a></li>
               </ul>
               <div className='social'>
-                    <div className="social_icons" >
+                    <div className="social_icons" style={{color: dark ? 'black' :'#fff'}}>
                         {socialIcons.map((socialIcon, index) => {
                         return (
-                            <div key={index} style={{color: dark ? 'black' :'#fff'}}>
-                                {socialIcon}
+                            <div key={index}>
+                                {socialIcon }
                             </div>
                         )
                     })}
