@@ -34,7 +34,7 @@
             .icon {
             width: 50px;
             height: 50px;
-            background: #8c12f0;
+            background: #ff3333;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,9 +103,10 @@
 
         .btn {
             margin-top: 1rem;
-            background: #6e0dbd;
+            background: #ff3333;
             padding: 0.7rem 0.5rem;
             border-radius: 10px;
+            border: none;
             font-size: 0.9rem;
             width: 4.2rem;
             color: rgb(187, 174, 174);

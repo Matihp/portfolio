@@ -69,7 +69,7 @@ const Navbar = () => {
                         {socialIcons.map((socialIcon, index) => {
                         return (
                             <div key={index}>
-                                {socialIcon }
+                                <a href={socialIcon.link}>{socialIcon.icon}</a>
                             </div>
                         )
                     })}

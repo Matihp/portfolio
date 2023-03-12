@@ -52,7 +52,7 @@ const About = () => {
           <motion.a href='#' download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
-            style={{background: dark ? 'orange' :'rgb(191, 75, 160)'}}
+            style={{background: dark ? 'orange' :'#ff3333',fontWeight:'700'}}
           >
             Descargar CV
           </motion.a>

@@ -11,10 +11,24 @@ import work6 from "./assets/work6.png";
 
 export const navLinks = ["home", "sobre mi", "habilidades", "portfolio", "contacto"]
 
-export const socialIcons = [
-  <FaGithub /> ,
-  <FaLinkedin />,
-  <BsMedium />,
+// export const socialIcons = [
+//   <FaGithub /> ,
+//   <FaLinkedin />,
+//   <BsMedium />,
+// ]
+export const socialIcons=[
+  {
+    icon: <FaGithub />,
+    link:'https://github.com/matihp',
+  },
+  {
+    icon: <FaLinkedin />,
+    link:'https://www.linkedin.com/in/matias-contreras-692953223/',
+  },
+  {
+    icon: <BsMedium />,
+    link:'https://www.google.com',
+  }
 ]
 export const bios = [
   {
