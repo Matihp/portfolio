@@ -40,15 +40,11 @@ const About = () => {
           style={{color: dark ? 'black' :'#fff'}}
         >
 
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae at rem, tenetur ad ipsa sequi, optio eius laudantium vero minus maxime laborum est et nemo consequatur nostrum distinctio sed, nulla doloribus officiis ea eligendi explicabo.</p>
-          {bios.map(bio => {
-            return (
-              <div className="bio" key={bio.id}>
-                <span className='bioKey'>{bio.icon}{bio.key}</span>
-                <span className='bioValue'>{bio.value}</span>
-              </div>
-            )
-          })}
+          <p>Desde muy chico, he estado interesado en la informática y la programación. Me encanta aprender nuevos lenguajes y herramientas, y experimentar con diferentes tecnologías para mejorar mis habilidades y conocimientos.</p>
+          <p>Me caracterizo por ser una persona perseverante, que se enfoca en alcanzar los objetivos propuestos y que no se rinde ante los desafíos.</p>
+          <p>Una de las cosas que me ha permitido avanzar es mi capacidad para mantener la constancia en el trabajo. Entiendo que la programación es un proceso complejo que requiere paciencia y dedicación. Por eso, siempre busco formas de mantenerme motivado y enfocado en mis objetivos.</p>
+          <p>Lo que más me motiva es trabajar en equipo. Me encanta la dinámica de colaboración y la posibilidad de aprender de otros profesionales con diferentes habilidades y perspectivas. Disfruto de compartir conocimientos y de ayudar a mis compañeros de equipo a alcanzar sus objetivos.</p>
+          <p>Si tienes interés en colaborar en algún proyecto o si simplemente quieres conversar sobre tecnología, no dudes en contactarme. Me encantaría escuchar tus propuestas e ideas, y trabajar contigo de manera conjunta.</p>
           <motion.a href='#' download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}

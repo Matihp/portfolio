@@ -36,39 +36,11 @@ const Contact = () => {
       <div className="contact_form">
         <motion.div
           initial={{x: 0, opacity: 0}}
-          whileInView={{ x: [-150,0], opacity: 1 }}
-          transition={{duration: 1}}
-          className='contact_left_container'>
-          <h3>Just Say Hi</h3>
-          <p className='contact_text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil unde atque voluptates, cumque molestias eveniet voluptatum animi consectetur magni mollitia dolor exercitationem labore maiores!</p>
-          {contacts.map(contact => {
-            return (
-              <div className='contact_left' key={contact.id}>
-                <div className="icon">
-                  {contact.icon}
-                </div>
-                <p>{ contact.infoText}</p>
-              </div>
-            )
-          })}
-          <div className="social_icons">
-            {socialIcons.map((socialIcon, index) => {
-            return (
-              <div key={index} >
-                <a href={socialIcon.link}>{socialIcon.icon}</a>
-              </div>
-            )
-          })}
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{x: 0, opacity: 0}}
           whileInView={{ x: [150,0], opacity: 1 }}
           transition={{duration: 1}}
           className="contact_right"
         
         >
-          <h3>Get In Touch</h3>
           <form onSubmit={handleSubmit}>
             <div className="row">
               <input type="text" placeholder='Nombre'name='name'minLength='4' required/>
