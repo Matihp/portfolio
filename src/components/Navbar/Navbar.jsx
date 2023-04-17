@@ -69,7 +69,7 @@ const Navbar = () => {
                         {socialIcons.map((socialIcon, index) => {
                         return (
                             <div key={index}>
-                                <a href={socialIcon.link}>{socialIcon.icon}</a>
+                                <a style={{color: dark ? 'black' :'#fff'}} href={socialIcon.link}>{socialIcon.icon}</a>
                             </div>
                         )
                     })}

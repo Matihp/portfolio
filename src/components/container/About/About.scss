@@ -5,11 +5,12 @@
 .about_container {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    place-items: center;
+    // place-items: center;
     position: relative;
 
     @media screen and (max-width: 700px) {
         grid-template-columns: 1fr;
+        place-items: center;
     }
 
     .about_left {
@@ -31,6 +32,7 @@
         padding: 1rem;
         display: flex;
         flex-direction: column;
+        padding: 0;
 
         @media screen and (max-width: 700px) {
             padding: 0;

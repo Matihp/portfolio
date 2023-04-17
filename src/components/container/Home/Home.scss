@@ -60,6 +60,10 @@
                     font-size: 0.85rem;
                     text-transform: capitalize;
                     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+                    @media screen and (max-height: 670px) {
+                        margin-top: 2rem;
+                    }
                 }
         div{
             position: absolute;

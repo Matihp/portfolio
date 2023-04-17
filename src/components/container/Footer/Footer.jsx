@@ -27,7 +27,7 @@ const Footer = () => {
             {socialIcons.map((socialIcon, index) => {
             return (
               <div key={index} >
-                <a href={socialIcon.link}>{socialIcon.icon}</a>
+                <a style={{color: state.dark ? 'black' :'#fff'}} href={socialIcon.link}>{socialIcon.icon}</a>
               </div>
             )
           })}
