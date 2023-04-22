@@ -19,7 +19,7 @@ const Footer = () => {
     >
       <div className="copyright">
         <p >
-          Copyright&copy;2022 All rights reserved.
+          Copyright&copy;2022 Todos los derechos reservados.
         </p>
       </div>
       <div className="followMe">

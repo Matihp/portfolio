@@ -6,16 +6,16 @@ import {FiGithub, FiEye} from "react-icons/fi"
 import { motion } from 'framer-motion';
 
 const Portfolio = () => {
-  const [tab, setTab] = useState({ name: "all" });
+  const [tab, setTab] = useState({ name: "todo" });
   const [works,setWorks] = useState([])
   const [active, setActive] = useState(0);
 
   useEffect(() => {
-    if (tab.name === "all") {
+    if (tab.name === "todo") {
       setWorks(workImages)
     } else {
       const newWork = workImages.filter(workImage => {
-        return workImage.category.toLowerCase() === tab.name;
+        return workImage.category.toLowerCase() === tab.name  || workImage.tp.toLowerCase() === tab.name;
 
       })
       setWorks(newWork)
@@ -35,8 +35,7 @@ const Portfolio = () => {
         className="title"
       
       >
-            <span>Portfolio</span>
-            <h1 style={{color:'rgb(195, 104, 104)'}}>Proyectos</h1>
+            <h1 style={{color:'rgb(195, 104, 104)'}}>Portfolio</h1>
       </motion.div>
       <motion.div
         initial={{opacity: 0}}
@@ -72,7 +71,7 @@ const Portfolio = () => {
                 className='hoverLayer'
               >
                   
-                <motion.a href='#'
+                <motion.a href={work.page}
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
@@ -80,7 +79,7 @@ const Portfolio = () => {
                   <FiGithub />
                 </motion.a>
                   
-                <motion.a href='#'
+                <motion.a href={work.github}
                 whileInView={{scale: [0,1]}}
                  whileHover={{scale: [1, 1.1]}}
                  transition={{duration: 0.3}}
