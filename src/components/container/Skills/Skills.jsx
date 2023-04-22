@@ -23,7 +23,7 @@ const Skills = () => {
       >
         <button
           onClick={() => setActive(1)}
-          className={active === 1 ? "active" : ""}>Skills</button>
+          className={active === 1 ? "active" : ""}>Habilidades</button>
         <button
           onClick={() => setActive(2)}
           className={active === 2 ? "active" : ""}
@@ -37,7 +37,10 @@ const Skills = () => {
         {active === 1 && icons.map((icon, index) => {
           return (
             <div key={index} className="tools"style={{color:state.dark ?'black':'#afafaf'}} >
-              {icon}
+              <div className='tools-name'style={{color:state.dark ?'white':'#afafaf'}}>
+                {icon.name}
+              </div>
+              {icon.i}
             </div>
           )
         })}

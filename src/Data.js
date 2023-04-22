@@ -1,13 +1,12 @@
-import { FaGithub ,FaHtml5, FaCss3, FaNodeJs, FaReact, FaSass, FaFigma, FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaLinkedin } from "react-icons/fa";
-import { DiJavascript } from "react-icons/di";
+import { FaGithub ,FaHtml5, FaCss3,FaJava, FaNodeJs, FaReact, FaSass,FaDatabase,FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaLinkedin} from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { BsMedium } from "react-icons/bs";
-import work1 from "./assets/work1.png";
-import work2 from "./assets/work2.png";
-import work3 from "./assets/work3.png";
-import work4 from "./assets/work4.png";
-import work5 from "./assets/work5.png";
-import work6 from "./assets/work6.png";
+import clinicaO from "./assets/ClinicaO.PNG";
+import rick from "./assets/RickPage.PNG";
+import socialMedia from "./assets/SocialMedia.PNG";
+import dhBooking from "./assets/DhBooking.PNG";
+import shoes from "./assets/shoes.PNG";
+import wordle from "./assets/WordleGame.PNG";
 
 export const navLinks = ["home", "sobre mi", "habilidades", "portfolio", "contacto"]
 
@@ -27,7 +26,7 @@ export const socialIcons=[
   },
   {
     icon: <BsMedium />,
-    link:'https://www.google.com',
+    link:'https://medium.com/',
   }
 ]
 export const bios = [
@@ -51,70 +50,115 @@ export const bios = [
   }
 ]
 
-export const icons = [<FaHtml5 />, <FaCss3 />,<FaNodeJs />, <DiJavascript />, <SiTypescript />, <FaReact />,  <FaSass />, <FaFigma />]
+export const icons = [
+{
+  i: <FaHtml5 />,
+  name:'Html'
+},
+{
+  i:<FaCss3 />,
+  name:'Css'
+},
+{
+  i:<FaSass />,
+  name:'Sass'
+},
+{
+  i:<FaNodeJs />,
+  name:'NodeJs'
+},
+{
+  i:<SiTypescript />,
+  name:'Typescript'
+},
+{
+  i:<FaReact />,
+  name:'React'
+},
+{
+  i:<FaJava/>,
+  name:'Java'
+},
+{
+  i:<FaDatabase />,
+  name:'MySQL'
+}
+]
 
 export const experiences = [
   {
     id: 1,
     year: "2022",
-    position: "Senior Web Developer",
-    company: "about.com"
+    position: "Certified Tech Developer",
+    company: "Digital House"
   },
   {
     id: 2,
-    year: "2020",
-    position: "Junior Web Developer",
-    company: "quetal.com"
-  },
-  {
-    id: 3,
-    year: "2018",
+    year: "2023",
     position: "Freelancer",
-    company: "hola.com"
-  }
+    company: "Creación de paginas web"
+  },
 ]
 export const workImages = [
   {
     id: 1,
-    img: work1,
+    img: clinicaO,
     name: "project 1",
-    category: "web"
+    category: "React",
+    tp:"Javascript",
+    page:'https://soft-brioche-968db1.netlify.app/',
+    github:'https://github.com/Matihp/ctd-esp-fe3-final',
   },
   {
     id: 2,
-    img: work2,
+    img: rick,
     name: "project 2",
-    category: "web"
+    category: "React",
+    tp:'Typescript',
+    page:'https://splendorous-semifreddo-52d381.netlify.app/',
+    github:'https://github.com/Matihp/Proyecto_Typescript',
   },
   {
     id: 3,
-    img: work3,
+    img: socialMedia,
     name: "project 3",
-    category: "web"
+    category: "Next.js",
+    tp:"React",
+    page:'https://social-media-teal.vercel.app/',
+    github:'https://github.com/Matihp/social-media',
   },
   {
     id: 4,
-    img: work4,
+    img: dhBooking,
     name: "project 4",
-    category: "app"
+    category: "React",
+    tp:"Javascript",
+    page:'https://github.com/Matihp/DH-Booking',
+    github:'https://github.com/Matihp/DH-Booking',
   },
   {
     id: 5,
-    img: work5,
+    img: shoes,
     name: "project 5",
-    category: 'app'
+    category: "",
+    tp:"Javascript",
+    page:'https://matihp.github.io/ecommerce-shoes-page/',
+    github:'https://github.com/Matihp/ecommerce-shoes-page',
   },
   {
     id: 6,
-    img: work6,
+    img: wordle,
     name: "project 6",
-    category: "design"
+    category: "",
+    tp:"Javascript",
+    page:'https://matihp.github.io/Wordle-Game/',
+    github:'https://github.com/Matihp/Wordle-Game',
   }
 ]
 
 
 export const workNavs = [
-  "All", "Web", "App", "Design"
+  "Todo", "React", "Next.js","Typescript"
 ]
 
 export const contacts = [

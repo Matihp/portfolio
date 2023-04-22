@@ -37,6 +37,24 @@
   .tools {
     display: flex;
     justify-content: center;
+    .tools-name{
+      position: absolute;
+      height: 100px;
+      width: 113px;
+      border-radius: 60%;
+      z-index: 2;
+      opacity: 0;
+      text-align:center;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 40px;
+      cursor: pointer;
+    }
+    .tools-name:hover{   
+      opacity: 1;
+      background: #000;
+      transition: opacity .4s linear;
+    }
     svg {
         width: 100px;
         height: 100px;
