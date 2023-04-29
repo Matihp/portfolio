@@ -10,11 +10,6 @@ import wordle from "./assets/WordleGame.PNG";
 
 export const navLinks = ["home", "sobre mi", "habilidades", "portfolio", "contacto"]
 
-// export const socialIcons = [
-//   <FaGithub /> ,
-//   <FaLinkedin />,
-//   <BsMedium />,
-// ]
 export const socialIcons=[
   {
     icon: <FaGithub />,
@@ -88,7 +83,7 @@ export const icons = [
 export const experiences = [
   {
     id: 1,
-    year: "2022",
+    year: "2022-2023",
     position: "Certified Tech Developer",
     company: "Digital House"
   },
@@ -133,7 +128,7 @@ export const workImages = [
     name: "project 4",
     category: "React",
     tp:"Javascript",
-    page:'https://github.com/Matihp/DH-Booking',
+    page:'https://lambent-semifreddo-5ed05c.netlify.app',
     github:'https://github.com/Matihp/DH-Booking',
   },
   {
@@ -161,21 +156,4 @@ export const workNavs = [
   "Todo", "React", "Next.js","Typescript"
 ]
 
-export const contacts = [
-  {
-    id: 1,
-    icon: <FaMapMarkerAlt />,
-    infoText: "Rosario,Argentina"
-  },
-  {
-    id: 2,
-    icon: <FaPaperPlane />,
-    infoText: "matiasleoncontreras@gmail.com"
-  },
-  {
-    id: 3,
-    icon: <FaPhoneAlt />,
-    infoText: "+54-3462-645267"
-  }
-]
 

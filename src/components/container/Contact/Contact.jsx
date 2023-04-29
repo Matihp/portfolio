@@ -1,7 +1,5 @@
 import React from 'react';
 import "./Contact.scss";
-import { contacts } from '../../../Data';
-import { socialIcons } from '../../../Data';
 import { motion } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 import Swal from 'sweetalert2';
