@@ -45,7 +45,7 @@ const About = () => {
           <p>Una de las cosas que me ha permitido avanzar es mi capacidad para mantener la constancia en el trabajo. Entiendo que la programación es un proceso complejo que requiere paciencia y dedicación. Por eso, siempre busco formas de mantenerme motivado y enfocado en mis objetivos.</p>
           <p>Lo que más me motiva es trabajar en equipo. Me encanta la dinámica de colaboración y la posibilidad de aprender de otros profesionales con diferentes habilidades y perspectivas. Disfruto de compartir conocimientos y de ayudar a mis compañeros de equipo a alcanzar sus objetivos.</p>
           <p>Si tienes interés en colaborar en algún proyecto o si simplemente quieres conversar sobre tecnología, no dudes en contactarme. Me encantaría escuchar tus propuestas e ideas, y trabajar contigo de manera conjunta.</p>
-          <motion.a href='#' download=""
+          <motion.a href='https://www.canva.com/design/DAFi7jWPo0g/jmQ3reahqEi67FGka_t13g/view?utm_content=DAFi7jWPo0g&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink' download=""
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.3 }}
             style={{background: dark ? 'orange' :'#ff3333',fontWeight:'700'}}

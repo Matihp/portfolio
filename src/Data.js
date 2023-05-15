@@ -128,7 +128,7 @@ export const workImages = [
     name: "project 4",
     category: "React",
     tp:"Javascript",
-    page:'https://lambent-semifreddo-5ed05c.netlify.app',
+    page:'https://starship-booking.netlify.app',
     github:'https://github.com/Matihp/DH-Booking',
   },
   {
