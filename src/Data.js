@@ -1,4 +1,4 @@
-import { FaGithub ,FaHtml5, FaCss3,FaJava, FaNodeJs, FaReact, FaSass,FaDatabase,FaPhoneAlt, FaUser, FaMapMarkerAlt, FaPaperPlane, FaLinkedin} from "react-icons/fa";
+import { FaGithub ,FaHtml5, FaCss3,FaJava, FaNodeJs, FaReact, FaSass,FaDatabase,FaPhoneAlt, FaUser, FaPaperPlane, FaLinkedin} from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { BsMedium } from "react-icons/bs";
 import clinicaO from "./assets/ClinicaO.PNG";

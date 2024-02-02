@@ -1,7 +1,6 @@
 import React from 'react'
 import "./About.scss";
 import { motion } from 'framer-motion';
-import { bios } from '../../../Data';
 import portf from '../../../assets/portf.jpg'
 import { useGlobalStates } from '../../utils/global.context';
 const About = () => {
